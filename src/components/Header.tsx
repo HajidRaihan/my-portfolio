@@ -28,7 +28,7 @@ const Header = () => {
           {/* <h1 className="text-[3rem] font-semibold gradient">Hajid Raihan</h1> */}
           <h1 className="text-[2rem] font-semibold gradient">A Passionate Software Developer</h1>
           <button className="py-2 px-5 bg-black text-white rounded- text-md mt-5 button-shadow">
-            Contact me
+            Let's Connect
           </button>
         </div>
       </div>

@@ -147,8 +147,18 @@ body {
   -webkit-box-shadow: 4px 4px 0px 0px rgba(64,70,82,0.75);
   -moz-box-shadow: 4px 4px 0px 0px rgba(64,70,82,0.75);
 }
+
+.sertificate-shadow:hover  {
+  box-shadow: 4px 4px 0px 0px rgb(255, 255, 255);
+  -webkit-box-shadow: 4px 4px 0px 0px rgb(255, 255, 255);
+  -moz-box-shadow: 4px 4px 0px 0px rgb(255, 255, 255);
+}
 .button-shadow {
-  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+  transition: box-shadow 0.1s ease-in-out, transform 0.2s ease;
+}
+
+.sertificate-shadow {
+  transition: box-shadow 0.1s ease-in-out, transform 0.2s ease;
 }
 
 @layer utilities {
