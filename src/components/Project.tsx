@@ -2,8 +2,8 @@ import React from "react";
 
 const Project = () => {
   return (
-    <div className="py-10 w-full  px-32 items-center text-white justify-between">
-      <h1 className="text-[2rem] mb-2">My Projects</h1>
+    <div className="py-10 w-full  px-32 items-center  justify-between mt-32">
+      <h1 className="text-[2rem] text-center mb-5 font-semibold">My Projects</h1>
       <div className="grid grid-cols-3 gap-5">
         <ProjectCard />
         <ProjectCard />
@@ -23,7 +23,7 @@ const Project = () => {
 
 const ProjectCard = () => {
   return (
-    <div className="bg-[#18181b] w-802  rounded-md p-2">
+    <div className="bg-[#] w-82  border-2 border-black bg-white  rounded-md p-2 text-black shadow-md shadow-stone-700">
       <img
         src="https://akcdn.detik.net.id/visual/2020/01/30/fd8a89f8-cd07-4d7e-9a24-17c440c90e4d_169.png?w=650"
         alt=""

@@ -122,10 +122,11 @@
   font-style: italic;
 }
 
-body {
+html, body {
   /* color: var(--foreground);
   background: var(--background); */
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .profile-image {
@@ -155,6 +156,7 @@ body {
 }
 .button-shadow {
   transition: box-shadow 0.1s ease-in-out, transform 0.2s ease;
+  
 }
 
 .sertificate-shadow {

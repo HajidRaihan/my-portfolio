@@ -17,16 +17,20 @@ import Postgres from "../asset/postgres.svg";
 import Tailwind from "../asset/tailwind.svg";
 import Typescript from "../asset/typescript.svg";
 import Project from "@/components/Project";
+import Skill from "@/components/Skill";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-[#F5F5F5]">
       <Header />
-      <div className="bg-[#09090b] ">
+      <div className="bg-black ">
         <About />
-        {/* <Skill /> */}
-        <Project />
       </div>
-    </>
+      <Skill />
+      <Project />
+      <Footer />
+      <div className="bg-black ">{/* <Skill /> */}</div>
+    </div>
   );
 }

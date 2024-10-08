@@ -21,13 +21,67 @@ import Sertificate5 from "@/asset/sertificate_5.png";
 import Sertificate6 from "@/asset/sertificate_6.png";
 import Link from "next/link";
 
+// const About = () => {
+//   return (
+//     <div className="py-20 w-full  px-32 items-center text-white justify-between">
+//       <div className="md:flex justify-between w-full md:h-[350px]">
+//         <div className="pe-10 md:w-1/2 flex flex-col">
+//           <h1 className="text-[2rem] mb-2">About</h1>
+//           <p className="text-justify flex-grow">
+//             I'm an undergraduated student at Hasanuddin University with System Information Major. I
+//             recently began my journey as a software developer and am excited about the endless
+//             possibilities that coding provides. I've completed courses in html, css, javascript,
+//             Node.js, React.js, Next.js, Express.js, MongoDB, little bit Laravel and have started
+//             building small projects to sharpen my skills. My goal is to contribute to impactful
+//             projects and continue expanding my knowledge in both front-end and back-end development.
+//           </p>
+//         </div>
+//         <div className="md:w-1/2 md:ps-10 flex flex-col">
+//           <h1 className="text-[2rem] mb-2">Sertificates</h1>
+//           <div className="grid grid-cols-3 gap-4 overflow-y-auto ">
+//             <SertificateImage
+//               image={Sertificate1}
+//               href="https://drive.google.com/file/d/1XysVjZM2uK1nbwYfo-C9XkHxTl27IIDi/view?usp=drive_link"
+//             />
+//             <SertificateImage
+//               image={Sertificate2}
+//               href="https://drive.google.com/file/d/1gb16Heg7M_5BFQDRXBPtzDjnZQtXgT1n/view?usp=drive_link"
+//             />
+//             <SertificateImage
+//               image={Sertificate3}
+//               href="https://drive.google.com/file/d/1l5r72qWOfMCxBxKgnSQ3P6jhqGFRL0b_/view?usp=drive_link"
+//             />
+//             <SertificateImage
+//               image={Sertificate4}
+//               href="https://drive.google.com/file/d/18uC7H2GiBHiwAA3H-CcweKggl3Gdbh9_/view?usp=drive_link"
+//             />
+//             <SertificateImage
+//               image={Sertificate5}
+//               href="https://drive.google.com/file/d/1dkI-XyaAX-ZYGmCdLNunb_IbUk7DTvv1/view?usp=drive_link"
+//             />
+//             <SertificateImage
+//               image={Sertificate6}
+//               href="https://drive.google.com/file/d/1qiHj-evaJ1MaGKqQWXuHEuYj1y4GKY78/view?usp=drive_link"
+//             />
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* <button className="py-2 px-5 bg-black text-white rounded-lg text-xl">scroll</button> */}
+//     </div>
+//   );
+// };
+
 const About = () => {
   return (
-    <div className="py-10 w-full  px-32 items-center text-white justify-between">
-      <div className="md:flex justify-between w-full md:h-[300px]">
-        <div className="pe-10 md:w-1/2 flex flex-col">
-          <h1 className="text-[2rem] mb-2">About</h1>
-          <p className="text-justify flex-grow">
+    <div className="py-20 w-full  px-20 items-center text-white justify-between">
+      <div className="md:flex justify-between w-full h-full">
+        <div className="h-auto w-1/2 flex flex-col justify-center items-center">
+          <h1 className="text-[3rem] font-semibold">About me</h1>
+          {/* <div className="w-40 border-2"></div>    */}
+        </div>
+        <div className="md:w-1/2 flex flex-col">
+          <p className=" flex-grow text-base font-mono">
             I'm an undergraduated student at Hasanuddin University with System Information Major. I
             recently began my journey as a software developer and am excited about the endless
             possibilities that coding provides. I've completed courses in html, css, javascript,
@@ -35,10 +89,9 @@ const About = () => {
             building small projects to sharpen my skills. My goal is to contribute to impactful
             projects and continue expanding my knowledge in both front-end and back-end development.
           </p>
-        </div>
-        <div className="md:w-1/2 md:ps-10 flex flex-col">
-          <h1 className="text-[2rem] mb-2">Sertificates</h1>
-          <div className="grid grid-cols-3 gap-4 overflow-y-auto ">
+          <p className="font-medium text-xl mt-2">Certificates</p>
+          <div className="border w-20 mb-2" />
+          <div className="grid grid-cols-3 gap-4 overflow-y-auto p-3 h-[250px]">
             <SertificateImage
               image={Sertificate1}
               href="https://drive.google.com/file/d/1XysVjZM2uK1nbwYfo-C9XkHxTl27IIDi/view?usp=drive_link"
