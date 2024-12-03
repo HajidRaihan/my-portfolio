@@ -12,12 +12,6 @@ import Postgres from "../asset/postgres.svg";
 import Tailwind from "../asset/tailwind.svg";
 import Typescript from "../asset/typescript.svg";
 import Express from "@/asset/expressjs-icon.svg";
-import Sertificate1 from "@/asset/sertificate_1.png";
-import Sertificate2 from "@/asset/sertificate_2.png";
-import Sertificate3 from "@/asset/sertificate_3.png";
-import Sertificate4 from "@/asset/sertificate_4.png";
-import Sertificate5 from "@/asset/sertificate_5.png";
-import Sertificate6 from "@/asset/sertificate_6.png";
 import Link from "next/link";
 
 type SkillCardProps = {
@@ -27,7 +21,11 @@ type SkillCardProps = {
 
 const SkillCard = ({ icon, title }: SkillCardProps) => {
   return (
-    <div className="w-24 h-24 flex flex-col gap-1 p-5 border-2 border-black shadow-md justify-center items-center hover:text-black hover:scale-110 transition-transform rounded-md">
+    <div
+      data-aos="flip-right"
+      data-aos-duration="1000"
+      className="w-24 h-24 flex flex-col gap-1 p-5 border-2 border-black shadow-md justify-center items-center hover:text-black hover:scale-110 transition-transform rounded-md"
+    >
       {/* <div className="min-h-10 w-10"> */}
       <Image src={icon} alt="" className="w-full h-full" />
       {/* </div> */}

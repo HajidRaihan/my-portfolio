@@ -12,7 +12,7 @@ const Footer = () => {
         Looking for a developer for your next project?
       </p>
       <p className="text-xl text-center font-bold mb-10">Let's talk!!</p>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-2 gap-3">
         <Box label="Email" title="hajidraihan@gmail.com" icon={MdOutlineEmail} href="#" />
         <Box
           label="Github"
@@ -29,7 +29,7 @@ const Footer = () => {
         <Box
           label="Instagram"
           title="@raihanhjid"
-          icon={FaLinkedin}
+          icon={FaInstagram}
           href="https://www.instagram.com/raihanhjid/"
         />
       </div>
@@ -51,7 +51,8 @@ const Box: React.FC<BoxProps> = ({ icon: Icon, label, title, href }) => {
     <Link
       href={href}
       target={href !== "#" ? "_blank" : ""}
-      className="w-60 h-20 border-2 hover:bg-white hover:text-black transition cursor-pointer border-white p-3 rounded-md flex items-center justify-start"
+      data-aos="fade-right"
+      className="w-72 h-20 border-2 hover:bg-white hover:text-black transition cursor-pointer border-white p-3 rounded-md flex items-center justify-start"
     >
       <div className="flex flex-col gap-2 justify-center">
         <div className="flex gap-2 items-center">

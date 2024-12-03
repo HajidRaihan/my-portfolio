@@ -76,11 +76,20 @@ const About = () => {
   return (
     <div className="py-20 w-full  px-20 items-center text-white justify-between">
       <div className="md:flex justify-between w-full h-full">
-        <div className="h-auto w-1/2 flex flex-col justify-center items-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="h-auto w-1/2 flex flex-col justify-center items-center"
+        >
           <h1 className="text-[3rem] font-semibold">About me</h1>
           {/* <div className="w-40 border-2"></div>    */}
         </div>
-        <div className="md:w-1/2 flex flex-col">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="md:w-1/2 flex flex-col"
+        >
           <p className=" flex-grow text-base font-mono">
             I'm an undergraduated student at Hasanuddin University with System Information Major. I
             recently began my journey as a software developer and am excited about the endless

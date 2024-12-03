@@ -23,7 +23,11 @@ const Project = () => {
 
 const ProjectCard = () => {
   return (
-    <div className="bg-[#] w-82  border-2 border-black bg-white  rounded-md p-2 text-black shadow-md shadow-stone-700">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="500"
+      className="bg-[#] w-82  border-2 border-black bg-white  rounded-md p-2 text-black shadow-md shadow-stone-700"
+    >
       <img
         src="https://akcdn.detik.net.id/visual/2020/01/30/fd8a89f8-cd07-4d7e-9a24-17c440c90e4d_169.png?w=650"
         alt=""

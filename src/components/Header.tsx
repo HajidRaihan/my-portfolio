@@ -5,7 +5,11 @@ import Foto from "@/asset/foto.png";
 const Header = () => {
   return (
     <div className="py-10 w-full flex px-32 items-center bg-[#F5F5F5] justify-between">
-      <div className="w-1/2   justify-center items-center">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        className="w-1/2   justify-center items-center"
+      >
         <div className="">
           <h1 className="text-[3rem] font-semibold gradient">
             {/* <Typewriter
@@ -33,7 +37,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="w-1/2">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" className="w-1/2">
         <div className="w-96 h-[500px] ms-20 bg-[#6a6875] rounded-full">
           {/* <Image
             src={Blob}
