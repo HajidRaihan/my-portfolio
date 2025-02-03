@@ -74,12 +74,12 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="py-20 w-full  px-20 items-center text-white justify-between">
+    <div className="py-20 w-full px-20 items-center text-black justify-between">
       <div className="md:flex justify-between w-full h-full">
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
-          className="h-auto w-1/2 flex flex-col justify-center items-center"
+          className="h-auto w-1/2 md:pe-20 flex flex-col justify-center items-center"
         >
           <h1 className="text-[3rem] font-semibold">About me</h1>
           {/* <div className="w-40 border-2"></div>    */}
@@ -88,15 +88,16 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1000"
-          className="md:w-1/2 flex flex-col"
+          className="md:w-1/2  flex flex-col"
         >
           <p className=" flex-grow text-base font-mono">
-            I'm an undergraduated student at Hasanuddin University with System Information Major. I
-            recently began my journey as a software developer and am excited about the endless
-            possibilities that coding provides. I've completed courses in html, css, javascript,
-            Node.js, React.js, Next.js, Express.js, MongoDB, little bit Laravel and have started
-            building small projects to sharpen my skills. My goal is to contribute to impactful
-            projects and continue expanding my knowledge in both front-end and back-end development.
+            I&apos;m an undergraduated student at Hasanuddin University with System Information
+            Major. I recently began my journey as a software developer and am excited about the
+            endless possibilities that coding provides. I&apos;ve completed courses in html, css,
+            javascript, Node.js, React.js, Next.js, Express.js, MongoDB, little bit Laravel and have
+            started building small projects to sharpen my skills. My goal is to contribute to
+            impactful projects and continue expanding my knowledge in both front-end and back-end
+            development.
           </p>
           <p className="font-medium text-xl mt-2">Certificates</p>
           <div className="border w-20 mb-2" />

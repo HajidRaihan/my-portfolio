@@ -4,7 +4,7 @@ import Image from "next/image";
 import Foto from "@/asset/foto.png";
 const Header = () => {
   return (
-    <div className="py-10 w-full flex px-32 items-center bg-[#F5F5F5] justify-between">
+    <div className=" relative py-10 w-full flex px-32 items-center bg-[#F5F5F5] justify-between min-h-screen">
       <div
         data-aos="fade-right"
         data-aos-duration="1000"
@@ -27,12 +27,12 @@ const Header = () => {
                 delay: 100,
               }}
             /> */}
-            Hi. I'm Hajid Raihan
+            Hi. I&apos;m Hajid Raihan
           </h1>
           {/* <h1 className="text-[3rem] font-semibold gradient">Hajid Raihan</h1> */}
           <h1 className="text-[2rem] font-semibold gradient">A Passionate Software Developer</h1>
           <button className="py-2 px-5 bg-black text-white rounded- text-md mt-5 button-shadow">
-            Let's Connect
+            Let&apos;s Connect
           </button>
         </div>
       </div>
@@ -53,6 +53,7 @@ const Header = () => {
           />
         </div>
       </div>
+      {/* <Navbar /> */}
 
       {/* <button className="py-2 px-5 bg-black text-white rounded-lg text-xl">scroll</button> */}
     </div>

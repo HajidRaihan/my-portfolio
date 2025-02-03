@@ -5,9 +5,9 @@ import { FaInstagram } from "react-icons/fa";
 import { IconType } from "react-icons";
 import Link from "next/link";
 
-const Footer = () => {
+const Contact = () => {
   return (
-    <div className="relative bg-black text-white h-[400px] w-full flex flex-col justify-center items-center">
+    <div className="relative min-h-screen w-full flex flex-col justify-center items-center">
       <p className="text-lg text-center font-medium mb-2">
         Looking for a developer for your next project?
       </p>
@@ -52,7 +52,7 @@ const Box: React.FC<BoxProps> = ({ icon: Icon, label, title, href }) => {
       href={href}
       target={href !== "#" ? "_blank" : ""}
       data-aos="fade-right"
-      className="w-72 h-20 border-2 hover:bg-white hover:text-black transition cursor-pointer border-white p-3 rounded-md flex items-center justify-start"
+      className="w-72 h-20 border-2 hover:bg-black hover:text-white transition cursor-pointer border-black p-3 rounded-md flex items-center justify-start"
     >
       <div className="flex flex-col gap-2 justify-center">
         <div className="flex gap-2 items-center">
@@ -65,4 +65,4 @@ const Box: React.FC<BoxProps> = ({ icon: Icon, label, title, href }) => {
   );
 };
 
-export default Footer;
+export default Contact;

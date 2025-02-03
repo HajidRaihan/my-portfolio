@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "framer-motion": "^12.0.11",
     "fslightbox-react": "^1.7.6",
     "next": "14.2.13",
     "react": "^18",

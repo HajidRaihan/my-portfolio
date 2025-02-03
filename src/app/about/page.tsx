@@ -5,9 +5,9 @@ import { FaInstagram } from "react-icons/fa";
 import { IconType } from "react-icons";
 import Link from "next/link";
 
-const Footer = () => {
+const Contact = () => {
   return (
-    <div className="relative bg-black text-white h-[400px] w-full flex flex-col justify-center items-center">
+    <div className="relative min-h-screen w-full flex flex-col justify-center items-center">
       <p className="text-lg text-center font-medium mb-2">
         Looking for a developer for your next project?
       </p>
@@ -65,4 +65,4 @@ const Box: React.FC<BoxProps> = ({ icon: Icon, label, title, href }) => {
   );
 };
 
-export default Footer;
+export default Contact;
