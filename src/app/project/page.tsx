@@ -10,11 +10,16 @@ const Project = () => {
   return (
     <div className="max-h-screen overflow-hidden">
       <div className="py-10 w-full  px-32 items-center  justify-between mt-10">
-        <div className="mx-auto mb-5 w-fit">
+        <div data-aos="fade-right" data-aos-duration="500" className="mx-auto mb-5 w-fit">
           <h1 className="text-[2rem] text-center font-semibold">My Projects</h1>
           <div className="h-[2px] bg-black w-full" />
         </div>
-        <div className="grid grid-cols-3 gap-7 p-5 h-[70vh] max-h-[70vh] overflow-y-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          className="grid grid-cols-3 gap-7 p-5 h-[70vh] max-h-[70vh] overflow-y-auto"
+        >
           <ProjectCard
             title="Kudapan App"
             description="Platform pemesanan pada food court kudapan yang memungkinkan pelanggan untuk melakukan pemesanan, menambahkan barang ke keranjang, dan mengelola pesanan mereka secara efisien."

@@ -9,10 +9,12 @@ const Contact = () => {
   return (
     <div className="relative min-h-screen w-full flex flex-col justify-center items-center">
       <div>
-        <p className="text-lg text-center font-medium mb-2">
-          Looking for a developer for your next project?
-        </p>
-        <p className="text-xl text-center font-bold mb-10">Lets talk!!</p>
+        <div data-aos="fade-left" data-aos-duration="500">
+          <p className="text-lg text-center font-medium mb-2">
+            Looking for a developer for your next project?
+          </p>
+          <p className="text-xl text-center font-bold mb-10">Lets talk!!</p>
+        </div>
         <div className="grid grid-cols-2 gap-3">
           <Box label="Email" title="hajidraihan@gmail.com" icon={MdOutlineEmail} href="#" />
           <Box

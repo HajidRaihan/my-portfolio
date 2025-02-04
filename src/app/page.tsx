@@ -1,52 +1,55 @@
 "use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Foto from "@/asset/foto.png";
 import Link from "next/link";
+import TypewriterComponent from "typewriter-effect";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div className=" relative py-10 w-full flex px-32 items-center bg-[#F5F5F5] justify-between min-h-screen">
-      <div
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        className="w-1/2  justify-center items-center"
-      >
-        <div className="">
+      <div className="w-1/2  ">
+        <div>
           <h1 className="text-[3rem] font-semibold gradient">
-            {/* <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Hello.")
-                .pauseFor(1000)
-                .deleteAll()
-                .typeString("Welcome to my website!")
-                .start();
-            }}
-            options={{
-              // loop: true,
-              cursor: "|",
-              delay: 100,
-            }}
-          /> */}
-            Hi. I&apos;m Hajid Raihan
+            <TypewriterComponent
+              onInit={(typewriter) => {
+                typewriter.pauseFor(500).typeString("Hi. Im Hajid Raihan").start();
+              }}
+              options={{
+                // loop: true,
+                cursor: "|",
+                delay: 30,
+              }}
+            />
           </h1>
           {/* <h1 className="text-[3rem] font-semibold gradient">Hajid Raihan</h1> */}
-          <h1 className="text-[2rem] font-semibold gradient mb-5">
+          {/* <h1 className="text-[2rem] font-semibold gradient mb-5">
             A Passionate Software Developer
+          </h1> */}
+          <h1 className="text-[2rem] font-semibold gradient mb-5">
+            <TypewriterComponent
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(1000)
+                  .typeString("       A Passionate Software Developer")
+                  .start();
+              }}
+              options={{
+                // loop: true,
+                cursor: "|",
+                delay: 30,
+              }}
+            />
           </h1>
-          <Link
-            href="/contact"
-            className="py-2 px-5  bg-black text-white rounded-sm text-md button-shadow"
-          >
-            Let&apos;s Connect
-          </Link>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2500">
+            <Link
+              href="/contact"
+              className="py-2 px-5 bg-black text-white rounded-sm text-md button-shadow"
+            >
+              Let&apos;s Connect
+            </Link>
+          </div>
         </div>
       </div>
 
