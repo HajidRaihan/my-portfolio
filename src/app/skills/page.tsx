@@ -15,18 +15,26 @@ import Express from "@/asset/expressjs-icon.svg";
 
 const SkillPage = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <div className="text-black w-screen flex flex- justify-center items-center">
-        <h1
-          data-aos="fade-right"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-          className="text-[2rem] font-semibold mb-5 w-1/2 text-center"
-        >
-          Skill/Tools
-        </h1>
-        <div className="w-1/2">
-          <div className="w-fit grid grid-cols-4 justify-center flex-wrap gap-5">
+    <div className="min-h-screen md:flex md:mt-0 mt-20 justify-center items-center">
+      <div className="text-black w-screen md:flex justify-center items-center">
+        <div className="w-fit  mb-5 md:mb-0 md:w-1/2 mx-auto">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="md:text-[2rem] text-[1.5rem] font-semibold text-center mb-1"
+          >
+            Skill/Tools
+          </h1>
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            className="h-[2px] bg-black w-full md:hidden"
+          />
+        </div>
+
+        <div className="md:w-1/2 flex justify-center md:justify-start">
+          <div className="w-fit grid md:grid-cols-4 grid-cols-3 justify-center flex-wrap gap-5">
             <SkillCard icon={Html} title="HTML" />
             <SkillCard icon={Css} title="Css" />
             <SkillCard icon={Javascript} title="Javascript" />

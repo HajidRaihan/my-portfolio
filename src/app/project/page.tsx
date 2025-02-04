@@ -9,16 +9,27 @@ import Image, { StaticImageData } from "next/image";
 const Project = () => {
   return (
     <div className="max-h-screen overflow-hidden">
-      <div className="py-10 w-full  px-32 items-center  justify-between mt-10">
-        <div data-aos="fade-right" data-aos-duration="500" className="mx-auto mb-5 w-fit">
-          <h1 className="text-[2rem] text-center font-semibold">My Projects</h1>
-          <div className="h-[2px] bg-black w-full" />
+      <div className="py-10 w-full  lg:px-32 md:px-20 px-5 items-center  justify-between mt-10">
+        <div className="mx-auto mb-5 w-fit">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="500"
+            className="md:text-[2rem] text-[1.5rem] text-left md:text-center font-semibold mb-1"
+          >
+            My Projects
+          </h1>
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            className="h-[2px] bg-black w-full md:hidden"
+          />
         </div>
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="300"
-          className="grid grid-cols-3 gap-7 p-5 h-[70vh] max-h-[70vh] overflow-y-auto"
+          className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-7 p-5 h-[70vh] max-h-[70vh] overflow-y-auto"
         >
           <ProjectCard
             title="Kudapan App"

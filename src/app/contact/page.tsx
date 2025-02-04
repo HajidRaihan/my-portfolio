@@ -8,14 +8,14 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <div className="relative min-h-screen w-full flex flex-col justify-center items-center">
-      <div>
+      <div className="md:px-0 px-10">
         <div data-aos="fade-left" data-aos-duration="500">
-          <p className="text-lg text-center font-medium mb-2">
+          <p className="md:text-lg text-sm text-center font-medium mb-2">
             Looking for a developer for your next project?
           </p>
-          <p className="text-xl text-center font-bold mb-10">Lets talk!!</p>
+          <p className="md:text-xl text-lg text-center font-bold mb-10">Lets talk!!</p>
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
           <Box label="Email" title="hajidraihan@gmail.com" icon={MdOutlineEmail} href="#" />
           <Box
             label="Github"
@@ -58,7 +58,7 @@ const Box: React.FC<BoxProps> = ({ icon: Icon, label, title, href }) => {
       href={href}
       target={href !== "#" ? "_blank" : ""}
       data-aos="fade-right"
-      className="w-72 h-20 border-2 hover:bg-black hover:text-white transition cursor-pointer border-black p-3 rounded-md flex items-center justify-start"
+      className="md:w-72 w-full h-20 border-2 hover:bg-black hover:text-white transition cursor-pointer border-black p-3 rounded-md flex items-center justify-start"
     >
       <div className="flex flex-col gap-2 justify-center">
         <div className="flex gap-2 items-center">

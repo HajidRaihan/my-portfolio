@@ -13,14 +13,16 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="relative py-10 w-full flex items-center bg-[#F5F5F5] justify-between max-h-screen overflow-hidden">
-      <div className="py-20 w-full px-20 items-center text-black justify-between">
+      <div className="py-20 w-full md:px-20 px-10 items-center text-black justify-between">
         <div className="md:flex justify-between w-full h-full">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="h-auto w-1/2 md:pe-20 flex flex-col justify-center items-center"
+            className="h-auto md:w-1/2 w-fit md:flex flex-col mb-5 md:mb-0 justify-center items-center"
           >
-            <h1 className="text-[2rem] font-semibold ">About me</h1>
+            <h1 className="md:text-[2rem] text-[1.5rem] font-semibold ">About me</h1>
+            <div className="h-[2px] bg-black w-full md:hidden" />
+
             {/* <div className="w-40 border-2"></div>    */}
           </div>
           <div
@@ -29,7 +31,7 @@ const About = () => {
             data-aos-duration="1000"
             className="md:w-1/2 flex flex-col"
           >
-            <p className=" flex-grow text-sm font-mono">
+            <p className="flex-grow text-justify text-sm font-mono">
               I&apos;m an undergraduated student at Hasanuddin University with System Information
               Major. I recently began my journey as a software developer and am excited about the
               endless possibilities that coding provides. I&apos;ve completed courses in html, css,
