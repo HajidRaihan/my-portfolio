@@ -84,11 +84,7 @@ interface TechBadge {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, techs }) => {
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="500"
-      className="bg-[#]  border-2 border-black bg-white  rounded-md p-2 text-black shadow-md shadow-stone-700 hover:shadow-lg hover:scale-105 hover:cursor-pointer hover:shadow-slate-400 transition-all duration-300"
-    >
+    <div className="bg-[#]  border-2 border-black bg-white  rounded-md p-2 text-black shadow-md shadow-stone-700 hover:shadow-lg hover:scale-105 hover:cursor-pointer hover:shadow-slate-400 transition-all duration-300">
       <Image
         src={image}
         alt="project"
