@@ -59,7 +59,7 @@ export default function Home() {
         data-aos-delay="300"
         className="lg:w-1/2 w-full flex justify-center"
       >
-        <div className="lg:w-96 w-64 lg:h-[500px] h-96 bg-[#6a6875] rounded-full">
+        <div className="lg:w-96 w-64 lg:h-[500px] h-80 bg-[#6a6875] rounded-full">
           {/* <Image
           src={Blob}
           alt="Profile Image"
