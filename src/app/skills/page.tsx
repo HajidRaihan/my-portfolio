@@ -17,7 +17,14 @@ const SkillPage = () => {
   return (
     <div className="min-h-screen flex justify-center items-center">
       <div className="text-black w-screen flex flex- justify-center items-center">
-        <h1 className="text-[2rem] font-semibold mb-5 w-1/2 text-center">Skill/Tools</h1>
+        <h1
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="text-[2rem] font-semibold mb-5 w-1/2 text-center"
+        >
+          Skill/Tools
+        </h1>
         <div className="w-1/2">
           <div className="w-fit grid grid-cols-4 justify-center flex-wrap gap-5">
             <SkillCard icon={Html} title="HTML" />
@@ -49,7 +56,7 @@ const SkillCard = ({ icon, title }: SkillCardProps) => {
     <div
       data-aos="flip-right"
       data-aos-duration="1000"
-      className="w-24 h-24 flex flex-col gap-1 p-5 border-2 border-black shadow-md justify-center items-center hover:text-black hover:scale-110 hover:shadow-lg hover:shadow-slate-400 transition-all rounded-md"
+      className="w-24 h-24 flex flex-col gap-1 p-5 border-2 border-black shadow-md justify-center items-center hover:text-black hover:scale-110 hover:shadow-lg hover:shadow-slate-400 transition-all duration-300 rounded-md"
     >
       {/* <div className="min-h-10 w-10"> */}
       <Image src={icon} alt="" className="w-full h-full" />

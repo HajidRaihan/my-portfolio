@@ -8,33 +8,37 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <div className="relative min-h-screen w-full flex flex-col justify-center items-center">
-      <p className="text-lg text-center font-medium mb-2">
-        Looking for a developer for your next project?
-      </p>
-      <p className="text-xl text-center font-bold mb-10">Lets talk!!</p>
-      <div className="grid grid-cols-2 gap-3">
-        <Box label="Email" title="hajidraihan@gmail.com" icon={MdOutlineEmail} href="#" />
-        <Box
-          label="Github"
-          title="HajidRaihan"
-          icon={FaGithub}
-          href="https://github.com/HajidRaihan"
-        />
-        <Box
-          label="LinkedIn"
-          title="Hajid Raihan"
-          icon={FaLinkedin}
-          href="https://www.linkedin.com/in/hajidraihan/"
-        />
-        <Box
-          label="Instagram"
-          title="@raihanhjid"
-          icon={FaInstagram}
-          href="https://www.instagram.com/raihanhjid/"
-        />
-      </div>
+      <div>
+        <p className="text-lg text-center font-medium mb-2">
+          Looking for a developer for your next project?
+        </p>
+        <p className="text-xl text-center font-bold mb-10">Lets talk!!</p>
+        <div className="grid grid-cols-2 gap-3">
+          <Box label="Email" title="hajidraihan@gmail.com" icon={MdOutlineEmail} href="#" />
+          <Box
+            label="Github"
+            title="HajidRaihan"
+            icon={FaGithub}
+            href="https://github.com/HajidRaihan"
+          />
+          <Box
+            label="LinkedIn"
+            title="Hajid Raihan"
+            icon={FaLinkedin}
+            href="https://www.linkedin.com/in/hajidraihan/"
+          />
+          <Box
+            label="Instagram"
+            title="@raihanhjid"
+            icon={FaInstagram}
+            href="https://www.instagram.com/raihanhjid/"
+          />
+        </div>
 
-      <p className="text-xs absolute bottom-5">Hajid Raihan © 2024</p>
+        <p className="text-xs absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-5 text-center">
+          Hajid Raihan © 2024
+        </p>
+      </div>
     </div>
   );
 };

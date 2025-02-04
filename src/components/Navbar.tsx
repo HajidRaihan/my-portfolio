@@ -38,7 +38,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ children, isActive }) => {
           <motion.div
             layoutId="underline"
             className="absolute left-0 bottom-0 h-[2px] bg-black w-full"
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
           />
         )}
       </Link>
