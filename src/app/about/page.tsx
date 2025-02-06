@@ -15,13 +15,19 @@ const About = () => {
     <div className="relative py-10 w-full flex items-center bg-[#F5F5F5] justify-between max-h-screen overflow-hidden">
       <div className="py-20 w-full md:px-20 px-10 items-center text-black justify-between">
         <div className="md:flex justify-between w-full h-full">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="h-auto md:w-1/2 w-fit md:flex flex-col mb-5 md:mb-0 justify-center items-center"
-          >
-            <h1 className="md:text-[2rem] text-[1.5rem] font-semibold ">About me</h1>
-            <div className="h-[2px] bg-black w-full md:hidden" />
+          <div className="h-auto md:w-1/2 w-fit md:flex flex-col mb-5 md:mb-0 justify-center items-center">
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="md:text-[2rem] text-[1.5rem] font-semibold "
+            >
+              About me
+            </h1>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              className="h-[2px] bg-black w-full md:hidden"
+            />
 
             {/* <div className="w-40 border-2"></div>    */}
           </div>

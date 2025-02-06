@@ -9,8 +9,8 @@ import Image, { StaticImageData } from "next/image";
 const Project = () => {
   return (
     <div className="max-h-screen overflow-hidden">
-      <div className="py-10 w-full  lg:px-32 md:px-20 px-5 items-center  justify-between mt-10">
-        <div className="mx-auto mb-5 w-fit">
+      <div className="py-12 w-full  lg:px-32 md:px-20 px-5 items-center  justify-between mt-10">
+        <div className="md:mx-auto w-fit ps-5 md:ps-0">
           <h1
             data-aos="fade-right"
             data-aos-duration="500"
