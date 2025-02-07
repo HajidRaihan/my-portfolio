@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import Html from "@/asset/html.svg";
 import Css from "@/asset/css.svg";
 import Javascript from "@/asset/javascript.svg";
@@ -68,6 +68,7 @@ type SkillCardProps = {
   icon: StaticImageData;
   title: string;
   aosdelay?: string;
+  key: number;
 };
 
 const SkillCard = ({ icon, title, aosdelay }: SkillCardProps) => {
